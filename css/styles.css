@@ -87,6 +87,7 @@ body {
 img {
     display: block;
 }
+
 /*---------------------------------- Header Styles ----------------------------------*/
 
 .header {
@@ -118,7 +119,7 @@ img {
     color: var(--hero-footer-backgroudcolor);
 }
 
-.header-item + .header-item {
+.header-item+.header-item {
     margin-left: 40px;
 }
 
@@ -137,8 +138,8 @@ img {
     display: flex;
 }
 
-.address-item + .address-item {
-    margin-left:40px;
+.address-item+.address-item {
+    margin-left: 40px;
 }
 
 .nav-address {
@@ -181,7 +182,7 @@ img {
 /*---------------------------------- Text section Styles ----------------------------------*/
 
 .text-title {
-    margin-bottom:8px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -193,8 +194,8 @@ img {
     display: flex;
 }
 
-.text-item + .text-item {
-    margin-left:24px;
+.text-item+.text-item {
+    margin-left: 24px;
 }
 
 /*---------------------------------- Actibities Styles ----------------------------------*/
@@ -204,7 +205,7 @@ img {
 }
 
 .activities-title {
-    margin-bottom:72px;
+    margin-bottom: 72px;
     font-weight: 500;
     font-size: 36px;
     line-height: 1.11;
@@ -219,7 +220,7 @@ img {
 }
 
 .activities-item:not(:last-child) {
-    margin-right:24px;
+    margin-right: 24px;
 }
 
 /*---------------------------------- Team Styles ----------------------------------*/
@@ -229,7 +230,7 @@ img {
 }
 
 .team-title {
-    margin-bottom:72px;
+    margin-bottom: 72px;
     font-weight: 500;
     font-size: 36px;
     line-height: 1.11;
@@ -271,14 +272,14 @@ img {
 /*---------------------------------- Footer Styles ----------------------------------*/
 
 .footer {
-    padding-top:100px;
+    padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--hero-footer-backgroudcolor);
 }
 
 .logo-footer {
     display: inline-block;
-    margin-bottom:16px;
+    margin-bottom: 16px;
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
@@ -305,12 +306,12 @@ img {
 .filter-list {
     display: flex;
     margin-top: 96px;
-    margin-bottom:72px;
+    margin-bottom: 72px;
     justify-content: center;
     margin-top: -24px;
 }
 
-.filter-item + .filter-item {
+.filter-item+.filter-item {
     margin-left: 24px;
 }
 
@@ -344,7 +345,7 @@ img {
 }
 
 .projects-img-title {
-    margin-bottom:8px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
