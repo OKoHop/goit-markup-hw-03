@@ -76,7 +76,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
-    outline: 2px solid lemonchiffon;
+    /* outline: 2px solid lemonchiffon; */
 }
 
 .section {
@@ -84,9 +84,17 @@ body {
     padding-bottom: 120px;
 }
 
+img {
+    display: block;
+}
 /*---------------------------------- Header Styles ----------------------------------*/
 
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
 .logo-header {
+    margin-right: 76px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -101,20 +109,56 @@ body {
     color: var(--hover-focus-color);
 }
 
+.header-list {
+    display: flex;
+}
+
 .header-item {
     font-weight: 500;
     color: var(--hero-footer-backgroudcolor);
 }
 
+.header-item + .header-item {
+    margin-left: 40px;
+}
+
+.header-links,
+.address-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.address {
+    margin-left: auto;
+}
+
+.address-list {
+    display: flex;
+}
+
+.address-item + .address-item {
+    margin-left:40px;
+}
+
+.nav-address {
+    display: flex;
+    align-items: center;
+}
+
+
 /*---------------------------------- Hero Styles ----------------------------------*/
 
 .hero {
+    text-align: center;
     background: var(--hero-footer-backgroudcolor);
 }
 
 .hero-title {
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -124,6 +168,7 @@ body {
 }
 
 .hero-btn {
+    margin-top: 48px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -148,7 +193,15 @@ body {
     display: flex;
 }
 
+.text-item + .text-item {
+    margin-left:24px;
+}
+
 /*---------------------------------- Actibities Styles ----------------------------------*/
+
+.activities {
+    margin-top: -120px;
+}
 
 .activities-title {
     margin-bottom:72px;
@@ -163,6 +216,10 @@ body {
 
 .activities-list {
     display: flex;
+}
+
+.activities-item:not(:last-child) {
+    margin-right:24px;
 }
 
 /*---------------------------------- Team Styles ----------------------------------*/
@@ -184,17 +241,31 @@ body {
 
 .team-list {
     display: flex;
+    flex-wrap: wrap;
+    margin-right: -24px;
 }
 
+.team-item {
+    margin-right: 24px;
+    flex-basis: calc(100% / 4 - 24px);
+}
+
+/* .team-item:not(:last-child) {
+    margin-right:24px;
+} */
+
 .team-name {
-    /* margin-top:32px;
-    margin-bottom:8px; */
-    margin:32px 65px 8px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--hero-footer-backgroudcolor);
+}
+
+.team-container {
+    padding: 32px 16px;
+    text-align: center;
 }
 
 /*---------------------------------- Footer Styles ----------------------------------*/
@@ -206,6 +277,7 @@ body {
 }
 
 .logo-footer {
+    display: inline-block;
     margin-bottom:16px;
     text-decoration: none;
     font-family: 'Raleway';
@@ -222,6 +294,7 @@ body {
 }
 
 .footer-text {
+    width: 264px;
     color: var(--accent-color);
 }
 
@@ -230,7 +303,15 @@ body {
 /*---------------------------------- Filter Styles ----------------------------------*/
 
 .filter-list {
+    display: flex;
+    margin-top: 96px;
     margin-bottom:72px;
+    justify-content: center;
+    margin-top: -24px;
+}
+
+.filter-item + .filter-item {
+    margin-left: 24px;
 }
 
 .filter-btn {
@@ -244,17 +325,34 @@ body {
 
 /*---------------------------------- Projects Styles ----------------------------------*/
 
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -48px;
+    margin-left: -24px;
+}
+
+.projects-item {
+    margin-top: 48px;
+    margin-left: 24px;
+    flex-basis: calc(100% / 3 - 24px);
+}
+
 .project-link {
     text-decoration: none;
     color: var(--hero-footer-backgroudcolor);
 }
 
 .projects-img-title {
-    margin-top:32px;
     margin-bottom:8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--hero-footer-backgroudcolor);
+}
+
+.projects-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
