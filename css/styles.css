@@ -201,7 +201,7 @@ img {
 /*---------------------------------- Actibities Styles ----------------------------------*/
 
 .activities {
-    margin-top: -120px;
+    padding-top: 0;
 }
 
 .activities-title {
@@ -303,12 +303,14 @@ img {
 
 /*---------------------------------- Filter Styles ----------------------------------*/
 
+.main-section {
+    padding-top: 96px;
+}
+
 .filter-list {
     display: flex;
-    margin-top: 96px;
     margin-bottom: 72px;
     justify-content: center;
-    margin-top: -24px;
 }
 
 .filter-item+.filter-item {
