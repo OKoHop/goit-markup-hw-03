@@ -31,7 +31,7 @@ body {
 }
 
 .btn {
-    color: var(--light-color);
+    background-color: var(--light-color);
     cursor: pointer;
 }
 
@@ -44,7 +44,7 @@ body {
 .btn:focus {
     border:1px solid transparent;
     background-color: var(--pressed-color);
-    color: var(--light-color);
+    color: #FFFFFF;
 }
 
 .visually-hidden {
