@@ -357,13 +357,11 @@ img {
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -48px;
-    margin-left: -24px;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .projects-item {
-    margin-top: 48px;
-    margin-left: 24px;
     height: calc((100% - var(--margin-list-item) * 2) / 3);
 }
 
