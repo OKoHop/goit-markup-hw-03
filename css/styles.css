@@ -42,7 +42,8 @@ body {
 
 .btn:hover,
 .btn:focus {
-    background-color: var(--hover-focus-color);
+    border:1px solid transparent;
+    background-color: var(--pressed-color);
     color: var(--light-color);
 }
 
@@ -156,14 +157,14 @@ img {
 /*---------------------------------- Hero Styles ----------------------------------*/
 
 .hero {
-    min-height: 600px;
+    padding-top: 188px;
+    padding-bottom: 188px;
     text-align: center;
     background: var(--hero-footer-backgroudcolor);
 }
 
 .hero-title {
     max-width: 494px;
-    margin-top: 68px;
     margin-right: auto;
     margin-left: auto;
     font-weight: 700;
